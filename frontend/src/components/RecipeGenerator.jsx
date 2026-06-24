@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import recipe_bg from "../assets/recipe_bg.jpg";
+import "../styles/RecipeGenerator.css";
 function RecipeGenerator() {
     const [ingredients, setIngredients] = useState('');
     const [cuisine, setCuisine] = useState('any');

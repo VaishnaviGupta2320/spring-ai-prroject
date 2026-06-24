@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ChatComponent from './components/ChatComponent';
 import RecipeGenerator from './components/RecipeGenerator';
-import './App.css';
+import "./styles/App.css";
 
 function App() {
   const [activeTab, setactiveTab] = useState('chat');

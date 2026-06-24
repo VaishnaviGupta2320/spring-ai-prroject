@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styles/ChatComponent.css";
 function ChatComponent() {
 
     const [prompt, setPrompt] = useState('');
@@ -53,7 +53,7 @@ setPrompt('');
     };
 
     return (
-
+<div className="chat-page">
         <div className="chat-container">
 
             <div className="header">
@@ -105,6 +105,7 @@ setPrompt('');
             <p>{msg.text}</p>
 
         </div>
+        
 
     ))
 }
@@ -118,7 +119,7 @@ setPrompt('');
 }
 
 </div>
-
+</div>
             </div>
 
             <div className="input-area">

@@ -1,0 +1,99 @@
+html{
+    font-family:Inter,Arial,sans-serif;
+}
+
+
+/* ---------- APP ---------- */
+
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ---------- TOP NAV ---------- */
+
+.top-nav{
+  position:fixed;
+
+  top:20px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  display:flex;
+
+  gap:20px;
+
+  padding:10px;
+
+  background:rgba(255,255,255,.05);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  backdrop-filter:blur(30px);
+
+  border-radius:60px;
+
+  z-index:1000;
+}
+
+
+/* ---------- PILLS ---------- */
+
+.pill {
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .1);
+
+  color: white;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  transition: .3s;
+
+  backdrop-filter: blur(20px);
+}
+
+.pill:hover {
+
+  background: rgba(255, 255, 255, .1);
+  transform:translateY(-2px);
+
+}
+
+
+.active-pill {
+
+  background:
+    linear-gradient(135deg,
+      #8B5CF6,
+      #EC4899);
+
+  color: white;
+
+  border: none;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  box-shadow:
+    0 10px 30px rgba(139, 92, 246, .5);
+
+}
